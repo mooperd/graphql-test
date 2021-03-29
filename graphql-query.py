@@ -11,6 +11,7 @@ transport = AIOHTTPTransport(headers=header, url="http://localhost:8080/v1/graph
 client = Client(transport=transport, fetch_schema_from_transport=True)
 
 # Provide a GraphQL query
+
 query = gql(
     """query MyQuery{
             town {
